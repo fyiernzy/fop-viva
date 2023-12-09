@@ -8,7 +8,7 @@ During the Viva presentation:
 
 1. The demo will instruct each team to make necessary changes to adapt their code to the requirements.
 2. Each team will be given 10 minutes to modify their code; afterward, the demos will begin the evaluation.
-3. If a team hasn't pushed the code to the forked repository and requested pull requests, the entire team will receive a score of 0.
+3. If a team hasn't pushed the code to the forked repository and requested pull requests, the entire team will receive a score of 0. Remember to create the folder using your team name as the folder name.
 4. Each team must submit their script following the template provided in '2323/Viva_'.
 5. The demos will pull the script and perform evaluations from the demo's terminal.
 6. Each team will be given one chance if any tests fail. **Challenges are allowed**.
