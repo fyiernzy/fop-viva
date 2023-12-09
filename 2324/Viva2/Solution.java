@@ -25,7 +25,7 @@ public class Solution {
         return null;
     }
 
-    public String removeSpecialCharacter(String string) {
+    public String removeSpecialCharacters(String string) {
         // Implement this method
         return null;
     }
