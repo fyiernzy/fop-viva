@@ -14,6 +14,9 @@ During the Viva presentation:
 6. Each team will be given one chance if any tests fail. **Challenges are allowed**.
 7. After the code evaluation, the demo will randomly select someone from the team to explain the questions.
 8. There should be no sharing of questions or code changes asked by the demos with other groups. If such behavior is caught, the whole team's scores will be halved, including the one who shared and the one who requested to share.
+9. The template provides essential methods, classes, and attributes that MUST be included in your submission. However, feel free to refactor and unleash your creativity to tackle the question. You have the liberty to create additional classes and methods as needed.
+10. Push your code using the following format: `2324/Viva2/TeamName/...`
+11. To foster collaboration within your team, one person should fork the repository, and others can work on the forked repo. Create issues for discussions as needed.
 
 ## How to Fork the Repository
 
@@ -23,6 +26,7 @@ During the Viva presentation:
 3. Click on the "Create Fork" button.
    ![Alt text](img/fork-2.png)
 4. Please be patient and wait.
+   ![Alt text](img/fork-3.png)
 5. You will now see a page identical to the [original repository](https://github.com/fyiernzy/FOP_Viva), but with a different owner.
    ![Alt text](img/fork-4.png)
 6. Use `git clone` to copy the forked repository to your local machine. Make any necessary changes, which will not be covered here as it has been previously explained.
