@@ -14,3 +14,5 @@ During the Viva presentation:
 6. Each team will be given one chance if any tests fail. **Challenges are allowed**.
 7. After the code evaluation, the demo will randomly select someone from the team to explain the questions.
 8. There should be no sharing of questions or code changes asked by the demos with other groups. If such behavior is caught, the whole team's scores will be halved, including the one who shared and the one who requested to share.
+
+New changes here!
