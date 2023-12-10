@@ -23,7 +23,6 @@ During the Viva presentation:
 3. Click on the "Create Fork" button.
    ![Alt text](img/fork-2.png)
 4. Please be patient and wait.
-   ![Alt text](img/fork-3.png)
 5. You will now see a page identical to the [original repository](https://github.com/fyiernzy/FOP_Viva), but with a different owner.
    ![Alt text](img/fork-4.png)
 6. Use `git clone` to copy the forked repository to your local machine. Make any necessary changes, which will not be covered here as it has been previously explained.
