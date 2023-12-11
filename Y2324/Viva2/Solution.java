@@ -25,14 +25,14 @@ public class Solution {
         return null;
     }
 
-    public String removeSpecialCharacters(String string) {
-        // Implement this method
-        return null;
+    public String removeSpecialCharacters(String n) {
+        String result = n.replaceAll("[^A-Za-z0-9]", "");
+        return result;
     }
 
-    public boolean isPalindrome(String string) {
-        // Implement this method
-        return true;
+    public boolean isPalindrome(String n) {
+        String cleanedString = removeSpecialCharacters(n);
+        return cleanedString.equals(new StringBuilder(cleanedString).reverse().toString());
     }
 
     public int[] generatePrimes(int lower, int upper) {
