@@ -26,13 +26,13 @@ public class Solution {
     }
 
     public String removeSpecialCharacters(String n) {
-        String result = n.replaceAll("[^A-Za-z0-9]", "");
-        return result;
+        // Implement this method
+        return null;
     }
 
     public boolean isPalindrome(String n) {
-        String cleanedString = removeSpecialCharacters(n);
-        return cleanedString.equals(new StringBuilder(cleanedString).reverse().toString());
+        // Implement this method
+        return true;
     }
 
     public int[] generatePrimes(int lower, int upper) {
