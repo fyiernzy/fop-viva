@@ -37,7 +37,21 @@ public class Solution {
     }
 
     public int[] generatePrimes(int lower, int upper) {
-        // Implement this method
-        return null;
+        int[] primes = new int[upper - lower];
+        int count = 0;
+
+        for(int i = lower; i <= upper; i++){
+            boolean valid = true;
+            for(int j = 2; j <= Math.sqrt(i); j++) {
+                if (i % j == 0) {
+                    valid = false;
+                    break; 
+                }
+            }
+
+            if (valid) {
+                primes[count] = i;
+                count++;
+            }
     }
 }
