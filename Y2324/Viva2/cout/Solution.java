@@ -40,7 +40,7 @@ public class Solution {
         int[] primes = new int[upper - lower];
         int count = 0;
 
-        for(int i = lower; i <= upper; i++){
+        for(int i = lower; i <= upper; i++) {
             boolean valid = true;
             for(int j = 2; j <= Math.sqrt(i); j++) {
                 if (i % j == 0) {
@@ -53,5 +53,6 @@ public class Solution {
                 primes[count] = i;
                 count++;
             }
-    }
+        }
+        return primes;
 }
