@@ -2,8 +2,8 @@ package Bitwave;
 
 import java.util.Arrays;
 
-public class Solution {
-    public static void displayMatrix(double matrix[][], int size){
+public class Solution_22115428 {
+    public void displayMatrix(double matrix[][], int size){
         for(double[] row:matrix){
             System.out.println(Arrays.toString(row));
         }
@@ -12,6 +12,7 @@ public class Solution {
 
     public double[][] addition(double[][] a, double[][] b) {
         // Implement this method
+        if((a.length != b.length) && a[0].length != b[0].length) return null;
         double[][]arrAdd=new double[a.length][a[0].length];
         for(int row=0;row<a.length;row++){
             for(int col=0;col<a[row].length;col++){
@@ -23,6 +24,7 @@ public class Solution {
 
     public double[][] subtraction(double[][] a, double[][] b) {
         // Implement this method
+        if((a.length != b.length) && a[0].length != b[0].length) return null;
         double[][]arrSub=new double[a.length][a[0].length];
         for(int row=0;row<a.length;row++){
             for(int col=0;col<a[row].length;col++){
@@ -34,6 +36,7 @@ public class Solution {
 
     public double[][] multiplication(double[][] a, double[][] b) {
         // Implement this method
+        if(a[0].length != b.length) return null;
         double[][]arrMul=new double[a.length][b[0].length];
         for(int row = 0; row < a.length; row++){
             for(int col = 0; col < b[0].length; col++){
@@ -178,5 +181,26 @@ public class Solution {
                 primeList[j++] = i;
         }
         return primeList;
+    }
+
+    public boolean isValidPalindrome(String string){
+        string = string.toLowerCase();
+        System.out.println(string);
+        String formattedString = "";
+        for(int i = 0; i < string.length(); i++){
+            char c = string.charAt(i);
+            if(Character.isLetterOrDigit(c)){
+                formattedString += c;
+            }
+        }
+        string = formattedString;
+        System.out.println(formattedString);
+
+        for(int i = 0; i < formattedString.length() / 2; i++){
+            if(string.charAt(i) != string.charAt(string.length() - i - 1)){
+                return false;
+            }
+        }
+        return true;
     }
 }
