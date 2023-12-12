@@ -15,7 +15,7 @@ import java.util.Scanner;
 public class Solution {
     public static int size = 3;
     public static void main(String[] args) {
-        q3();
+        q2();
     }
     
     public static int[][] addition(int[][] matric1, int[][] matric2) {
@@ -116,14 +116,21 @@ public class Solution {
         return inverse;
     }
 
-    public String removeSpecialCharacters(String string) {
-        // Implement this method
-        return null;
+    public static String removeSpecialCharacters(String str) {
+        String cleanstr = str.replaceAll("[^a-zA-Z0-9]", "");
+        cleanstr = cleanstr.toLowerCase();
+        return  cleanstr;
     }
 
-    public boolean isPalindrome(String string) {
-        // Implement this method
-        return true;
+    public static boolean isPalindrome(String str) {
+        System.out.printf("Original string: %s\n", str);
+        String cleanstr = removeSpecialCharacters(str);
+        String reversestr = "";
+        for (int i=cleanstr.length()-1; i>-1; i--){
+            reversestr = reversestr + cleanstr.charAt(i);
+        }
+        System.out.printf("Reversed string: %s\n", reversestr);
+        return(reversestr.equals(cleanstr));
     }
 
      public static ArrayList<Integer> generatePrimes(int lower, int upper){
@@ -178,5 +185,11 @@ public class Solution {
             System.out.print(i + " ");
         }System.out.print("]");
 
+     }
+     
+     public static void q2(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a string to determine if it is a palindrome: ");
+        System.out.printf("%s %s", "The input", isPalindrome(input.nextLine())==true? "is a palindrome.":"is not a palindrome.");
      }
 }
