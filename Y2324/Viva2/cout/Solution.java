@@ -55,8 +55,5 @@ public class Solution {
             }
         }
         return primes;
-<<<<<<< HEAD
-=======
  }
->>>>>>> acfaa9931d0112946e25e7480ff25d0c0c6c3b62
 }
