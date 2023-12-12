@@ -232,8 +232,34 @@ public class Solution {
             System.exit(0);
         }
 
-        ArrayList<Integer> primes = generatePrimes2(lowerLimit, upperLimit);
+        ArrayList<Integer> primes = generatePrimes(lowerLimit, upperLimit);
 
         System.out.println("The prime numbers within the range [" + lowerLimit + ", " + upperLimit + "] are: " + primes);
+    }
+
+    private static ArrayList<Integer> generatePrimes(int lowerLimit, int upperLimit) {
+        ArrayList<Integer> primes = new ArrayList<>();
+
+        for (int num = lowerLimit; num <= upperLimit; num++) {
+            if (isPrime(num)) {
+                primes.add(num);
+            }
+        }
+
+        return primes;
+    }
+
+    private static boolean isPrime(int num) {
+        if (num < 2) {
+            return false;
+        }
+
+        for (int i = 2; i * i <= num; i++) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+
+        return true;
     }
 }
