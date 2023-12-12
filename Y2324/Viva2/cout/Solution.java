@@ -41,14 +41,67 @@ public class Solution {
         return arr;
     }
 
-    public double[] determinant(double[][][] a) {
-        // Implement this method
-        return null;
+    public static double[] determinant(double[][] array) {
+        
+        double[] arr = new double[1];
+
+        double inner1 = array[1][1] * array[2][2] - array[1][2] * array[2][1];
+        double inner2 = array[1][0] * array[2][2] - array[1][2] * array[2][0];
+        double inner3 = array[1][0] * array[2][1] - array[1][1] * array[2][0];
+
+        arr[0] = (array[0][0] * inner1) - (array[0][1] * inner2) + (array[0][2] * inner3);
+
+        return arr;
     }
 
-    public double[][] inverse(double[][] a) {
-        // Implement this method
-        return null;
+    public static double[][] inverse(double[][] array) {
+        double[][] cofactors = new double[array.length][array.length];
+
+        int a = 1, b = 2, p = 1, q = 2;
+
+        for (int i = 0; i < array.length; i++) {
+            if (i >= p && p > 0) {
+                p--;
+            }
+
+            if (i >= q && q > 0) {
+                q--;
+            }
+            for (int j = 0; j < array[i].length; j++) {
+                if (j >= a && a > 0) {
+                    a--;
+                }
+
+                if (j >= b && b > 0) {
+                    b--;
+                }
+
+                cofactors[i][j] = array[p][a] * array[q][b] - array[p][b] * array[q][a];
+                cofactors[i][j] *= (Math.pow(-1, i + j));
+            }
+            a = 1;
+            b = 2;
+        }
+
+        double[][] transposeMatrix = new double[array.length][array.length];
+
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                transposeMatrix[j][i] = cofactors[i][j];
+            }
+        }
+
+        double[] det = determinant(array);
+
+        double[][] inverse = new double[array.length][array.length];
+
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                inverse[i][j] = 1.0 / det[0] * transposeMatrix[i][j];
+            }
+        }
+
+        return inverse;
     }
 
     public String removeSpecialCharacters(String n) {
