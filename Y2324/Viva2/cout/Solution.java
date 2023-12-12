@@ -1,44 +1,19 @@
 package Y2324.Viva2.cout;
 public class Solution {
 
-    public static double[][] addition(double[][] arr1, double arr2[][])
-    {
-        double[][] arr = new double[arr1.length][arr1.length];
-
-        for (int i = 0; i < arr1.length; i++) {
-            for (int j = 0; j < arr1[i].length; j++) {
-                arr[i][j] = arr1[i][j] + arr2[i][j];
-            }
-        }
-        return arr;
+    public double[][] addition(double[][] a, double[][] b) {
+        // Implement this method
+        return null;    
     }
 
-    public static double[][] subtraction(double[][] arr1, double[][] arr2) {
-        double[][] arr = new double[arr1.length][arr1[0].length];
-
-        for (int i = 0; i < arr1.length; i++) {
-            for (int j = 0; j < arr1[i].length; j++) {
-                arr[i][j] = arr1[i][j] - arr2[i][j];
-            }
-        }
-        return arr;
+    public double[][] subtraction(double[][] a, double[][] b) {
+        // Implement this method
+        return null;
     }
 
-    public static double[][] multiplication(double[][] arr1, double[][] arr2) {
-        int m = arr1.length;
-        int n = arr2.length;
-        int p = arr1.length;
-
-        double[][] arr = new double[m][n];
-
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                for (int k = 0; k < p; k++) {
-                    arr[i][j] += arr1[i][k] * arr2[k][j];
-                }
-            }
-        }
-        return arr;
+    public double[][] multiplication(double[][] a, double[][] b) {
+        // Implement this method
+        return null;
     }
 
     public double[] determinant(double[][][] a) {
@@ -80,5 +55,8 @@ public class Solution {
             }
         }
         return primes;
+<<<<<<< HEAD
+=======
  }
+>>>>>>> acfaa9931d0112946e25e7480ff25d0c0c6c3b62
 }
