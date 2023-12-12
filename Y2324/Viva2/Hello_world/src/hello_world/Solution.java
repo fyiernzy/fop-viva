@@ -15,7 +15,7 @@ import java.util.Scanner;
 public class Solution {
     public static int size = 3;
     public static void main(String[] args) {
-        q3();
+        q3b();
     }
     
     public static int[][] addition(int[][] matric1, int[][] matric2) {
@@ -179,4 +179,59 @@ public class Solution {
         }System.out.print("]");
 
      }
+     
+      private static ArrayList<Integer> generatePrimes2(int lowerLimit, int upperLimit) {
+        ArrayList<Integer> primes = new ArrayList<>();
+
+        for (int num = lowerLimit; num <= upperLimit; num++) {
+            if (isPrime2(num)) {
+                primes.add(num);
+            }
+        }
+
+        return primes;
+    }
+
+    private static boolean isPrime2(int num) {
+        if (num < 2) {
+            return false;
+        }
+
+        for (int i = 2; i * i <= num; i++) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+    
+    public static void q3b(){
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the lower limit of the range: ");
+        int lowerLimit = scanner.nextInt();
+
+        System.out.print("Enter the upper limit of the range: ");
+        int upperLimit = scanner.nextInt();
+
+        if (lowerLimit < 2) {
+            System.out.println("Lower limit should be greater than 1.");
+            System.exit(0);
+        }
+
+        if (upperLimit < lowerLimit) {
+            System.out.println("Upper limit should be greater than lower limit.");
+            System.exit(0);
+        }
+        
+        if (upperLimit == lowerLimit) {
+            System.out.println("Upper limit cannot be the same as lower limit.");
+            System.exit(0);
+        }
+
+        ArrayList<Integer> primes = generatePrimes2(lowerLimit, upperLimit);
+
+        System.out.println("The prime numbers within the range [" + lowerLimit + ", " + upperLimit + "] are: " + primes);
+    }
 }
