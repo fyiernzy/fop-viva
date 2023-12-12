@@ -2,6 +2,11 @@
 
 🌱 This repository is used for Viva evaluation, employing Java to perform automatic assessments on WIX1002 (Fundamentals of Programming).
 
+This README.md contains three sections, which are:
+1. [Guidance](https://github.com/fyiernzy/FOP_Viva?tab=readme-ov-file#guidance)
+2. [How to Fork a Repository](https://github.com/fyiernzy/FOP_Viva?tab=readme-ov-file#how-to-fork-the-repository)
+3. [How to Push a New File](https://github.com/fyiernzy/FOP_Viva?tab=readme-ov-file#how-to-push-a-new-file)
+
 ## Guidance
 
 During the Viva presentation:
