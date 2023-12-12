@@ -1,17 +1,20 @@
 package Y2324.Viva2.cout;
 public class Solution {
 
+
     public static double[][] addition(double[][] arr1, double arr2[][])
     {
         double[][] arr = new double[arr1.length][arr1.length];
 
-        for (int i = 0; i < arr1.length; i++) {
-            for (int j = 0; j < arr1[i].length; j++) { 
+        for (int i = 0; i < arr1.length; i++) { //arr1.length is for number of rows 
+            for (int j = 0; j < arr1[i].length; j++) { //arr1[0].length for the number of colms
                 arr[i][j] = arr1[i][j] + arr2[i][j];
             }
         }
         return arr;
     }
+
+    
 
     public static double[][] subtraction(double[][] arr1, double[][] arr2) {
         double[][] arr = new double[arr1.length][arr1[0].length];
@@ -133,5 +136,8 @@ public class Solution {
             }
         }
         return primes;
+<<<<<<< HEAD
+=======
  }
+>>>>>>> acfaa9931d0112946e25e7480ff25d0c0c6c3b62
 }
