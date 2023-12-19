@@ -25,12 +25,12 @@ public class Solution {
         return null;
     }
 
-    public String removeSpecialCharacters(String string) {
+    public String removeSpecialCharacters(String n) {
         // Implement this method
         return null;
     }
 
-    public boolean isPalindrome(String string) {
+    public boolean isPalindrome(String n) {
         // Implement this method
         return true;
     }
