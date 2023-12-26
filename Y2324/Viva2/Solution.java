@@ -35,6 +35,11 @@ public class Solution {
         return true;
     }
 
+    public boolean isValidPalindrome(String string) {
+        // Implement this method
+        return true;
+    }
+
     public int[] generatePrimes(int lower, int upper) {
         // Implement this method
         return null;
