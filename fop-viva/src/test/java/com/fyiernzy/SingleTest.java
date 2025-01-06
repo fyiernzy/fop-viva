@@ -11,6 +11,13 @@ import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+/**
+ * A test class that focuses on a single {@link Solution} implementation specified by its class name.
+ *
+ * <p>Unlike {@link PackageTest}, which dynamically detects and tests all {@link Solution} implementations,
+ * this class tests only one specified implementation. It is useful for debugging or validating a specific
+ * implementation.
+ */
 public class SingleTest {
     private final String className = "com.fyiernzy.solution.MySolution";
     private final Solution scheme = new Scheme();

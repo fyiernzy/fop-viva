@@ -10,6 +10,13 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
+/**
+ * A test class that dynamically detects all implementations of the {@link Solution} interface
+ * in the specified package and runs test suites (Q1, Q2, Q3) for each implementation.
+ *
+ * <p>This test is designed to validate multiple {@link Solution} implementations at once. Each
+ * implementation is tested against a predefined reference implementation, {@link Scheme}.
+ */
 public class PackageTest {
     @Nested
     class SolutionsTest {
